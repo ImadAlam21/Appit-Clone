@@ -11,8 +11,8 @@ export default function Cta() {
                     Download Appit now to start connecting with like-minded people and enjoy a seamless social experience!
                 </div>
             </div>
-            <div className="div flex flex-row gap-5">
-                <div className="div flex flex-row gap-5 items-center justify-start p-3 pl-0">
+            <div className="div flex flex-row items-center gap-5">
+                <div className="div flex flex-col md:flex-row gap-5 place-items-center p-3">
                     <div className="shrink-0 div flex bg-white rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
                         <img src="https://framerusercontent.com/images/1GgSZDsVA7GKub98IQFhnqoNJvI.svg"
                             className="w-auto h-auto object-cover p-1"
@@ -35,8 +35,10 @@ export default function Cta() {
             </div>
 
             <div className="relative flex justify-center items-center gap-8
+                h-full
                 md:h-[633px] lg:h-[712px] mx-10
-                w-[585px] sm:w-[745px] md:w-[845px] lg:w-full
+                w-[300px] sm:w-[745px] md:w-[845px] lg:w-full
+                px-10 md:px-0
                 overflow-hidden">
 
                 <div className="relative">
@@ -45,7 +47,7 @@ export default function Cta() {
                         className="relative w-[150px] sm:w-[180px] md:w-[210px] lg:w-[280px] scale-95 z-10"
                     />
                     <img src="https://framerusercontent.com/images/B2m0LKSmEka5kfOQ2YKH6auX0k.jpg"
-                        className="absolute z-20 -top-4
+                        className="absolute z-20 -top-3
                         left-0
                         right-0 scale-85 rounded-[40px]"
                     >
@@ -64,7 +66,7 @@ export default function Cta() {
                     className="w-[150px] sm:w-[180px] md:w-[210px] lg:w-[280px] scale-95 z-10"
                     />
                     <img src="https://framerusercontent.com/images/4PMUjM37QV5xqmOThq7gnKNHOBs.jpg"
-                    className="absolute z-20 -top-4
+                    className="absolute z-20 -top-3
                         left-0
                         right-0 scale-85 rounded-[40px]"
                     >

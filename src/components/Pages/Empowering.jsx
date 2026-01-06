@@ -18,14 +18,14 @@ export default function EmpoweringSection() {
                 </div>
 
                 <div className="flex w-xs md:w-xl lg:w-4xl font-semibold text-2xl md:text-4xl lg:text-5xl ">
-                    <p className="">
+                    <p className="text-center">
                         Empowering authentic connections for a vibrant social experience.
                     </p>
                 </div>
             </div>
 
             <div className="flex
-            col sm:flex-col md:flex-row
+            flex-col md:flex-row
             justify-between items-center
             w-full max-w-[1040px]
             gap-10 md:gap-4
@@ -38,7 +38,7 @@ export default function EmpoweringSection() {
                 justify-center items-center
                 w-[33%]
                 h-auto
-                 px-4 md:px-3 lg:px-6
+                px-4 md:px-3 lg:px-6
                 ">
                     <div className="text-5xl lg:text-6xl font-bold">
                         <CountUp start={450} end={500} useEasing={false} duration={1} suffix="k" enableScrollSpy={true} />

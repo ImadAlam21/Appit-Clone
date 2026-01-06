@@ -27,7 +27,7 @@ export default function HeroSection() {
     })
 
     return (
-        <section className="flex flex-col bg-black gap-24 px-4 md:px-8 lg:px-16">
+        <section className="flex flex-col items-center bg-black gap-24 px-4 md:px-8 lg:px-16">
             <div className="flex flex-col py-20 gap-2 box-border">
                 <div className="flex justify-center">
                     <motion.div
@@ -212,14 +212,14 @@ export default function HeroSection() {
             </div>
 
             {/* Parent wrapper */}
-            <div className="flex flex-col pt-[30px] pb-[30px] gap-[15px] text-white items-center">
+            <div className="flex flex-col w-xs md:w-xl lg:w-4xl text-center pt-[30px] pb-[30px] gap-[15px] text-white items-center">
                 <div>
                     <p>Trusted by 1000+ businesses across the world</p>
                 </div>
 
                 <div
                     id="scroller"
-                    className="w-[600px] max-w-full overflow-hidden mx-auto"
+                    className="max-w-full w-xs md:w-xl lg:w-4xl overflow-hidden mx-auto"
                 >
                     <ul
                         id="inner-scroller"

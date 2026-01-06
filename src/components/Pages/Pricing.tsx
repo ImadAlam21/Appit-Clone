@@ -53,10 +53,10 @@ export default function OurPricing() {
                     Yearly
                 </button>
             </div>
-            <div className="flex flex-col items-center lg:flex-row gap-20 w-[90%] justify-center py-10 mx-auto">
+            <div className="flex flex-col items-center lg:flex-row gap-20 w-full justify-center py-10 m-auto">
                 <div
                     id="card1"
-                    className="relative flex flex-col border-inherit rounded-3xl py-7 px-3 flex-none w-[350px]"
+                    className="relative flex flex-col border-inherit rounded-3xl py-7 px-3 flex-none w-fit"
                 >
                     <div className="flex flex-col items-start gap-3 z-2 p-2">
                         <h2 className="text-xl font-bold">Free Plan</h2>
@@ -103,7 +103,7 @@ export default function OurPricing() {
 
                 <div
                     id="card2"
-                    className="relative flex flex-col border-inherit rounded-3xl py-7 px-3 flex-none w-[350px]"
+                    className="relative flex flex-col border-inherit rounded-3xl py-7 px-3 flex-none w-fit"
                 >
                     <div className="flex flex-col items-start gap-3 z-2 p-2">
                         <h2 className="text-xl font-bold">Premium Plan</h2>

@@ -7,7 +7,7 @@ export default function Footer()
             }
         }
     return(
-        <div className="flex mb-10 flex-col text-white -mt-40 md:-mt-80 z-50 gap-5 items-center">
+        <div className="flex mb-10 flex-col text-white -mt-40 md:-mt-80 z-50 gap-10 items-center">
             <div className="div">
                 <img src="https://framerusercontent.com/images/yFWJIsf9PPgw31HHvEct97FMA3A.svg"></img>
             </div>
@@ -22,17 +22,36 @@ export default function Footer()
                     hello@appit.com
                 </button>
             </div>
-            <div className="header-mid hidden md:flex items-center gap-8 text-gray-300">
-                    <div onClick={() => scrollToSection("benefits")} className="header-subcontainer">Benefits</div>
-                    <div className="bg-white/20 w-1 h-1 rounded-[100%]"></div>
-                    <div onClick={() => scrollToSection("features")} className="header-subcontainer">Features</div>
-                    <div className="bg-white/20 w-1 h-1 rounded-[100%]"></div>
-                    <div onClick={() => scrollToSection("pricing")} className="header-subcontainer">Pricing</div>
-                    <div className="bg-white/20 w-1 h-1 rounded-[100%]"></div>
-                    <div onClick={() => scrollToSection("testimonials")} className="header-subcontainer">Testimonials</div>
-                    <div className="bg-white/20 w-1 h-1 rounded-[100%]"></div>
-                    <div onClick={() => scrollToSection("faqs")} className="header-subcontainer">FAQ's</div>
-                </div>
+            {/* Desktop nav */}
+<div className="hidden md:flex items-center gap-8 text-gray-300">
+  {/* existing header-mid content */}
+</div>
+
+{/* Mobile nav – stacked like screenshot */}
+<div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-base sm:text-lg">
+  <div className="flex items-center gap-8">
+    <button onClick={() => scrollToSection("benefits")}>Benefits</button>
+    <span className="text-gray-500">•</span>
+    <button onClick={() => scrollToSection("features")}>Features</button>
+    <span className="text-gray-500">•</span>
+  </div>
+
+  <div className="flex items-center gap-8">
+    <button onClick={() => scrollToSection("pricing")}>Pricing</button>
+    <span className="text-gray-500">•</span>
+    <button onClick={() => scrollToSection("testimonials")}>Testimonials</button>
+    <span className="text-gray-500">•</span>
+  </div>
+  <div className="flex items-center gap-8">
+    <button onClick={() => scrollToSection("faqs")}>FAQ&apos;s</button>
+  </div>
+
+  {/* <div className="flex items-center gap-3">
+    <span className="text-gray-500">•</span>
+    <button onClick={() => scrollToSection("waitlist")}>Waitlist</button>
+  </div> */}
+</div>
+
         </div>
     )
 }
