@@ -339,7 +339,7 @@ export default function OurBenefits() {
             </div> */}
 
             <div className="grid grid-cols-1 place-items-center lg:grid-cols-3 gap-5 min-h-[100px] max-w-fit w-full text-white">
-                <div className="div flex items-center h-full px-4 flex-col gap-5">
+                <div className="div flex px-4 flex-col gap-5">
                     <div className="bg-[#141415] rounded-2xl border-[0.1px] border-gray-600 max-w-[300px] h-full p-6">
                         <div className="flex flex-col gap-5">
                             <div className="bg-[#1f1f22]
@@ -371,16 +371,16 @@ export default function OurBenefits() {
                         </div>
                     </div>
                 </div>
-                <div className="relative h-[420px] w-[300px] overflow-hidden">
+                <div className="relative h-full w-[300px] overflow-hidden">
                     <div>
                         <img src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png?scale-down-to=1024"
-                            className="mx-auto relative w-auto h-[500px] z-2"></img>
+                            className="mx-auto relative w-auto scale-90 h-full z-2"></img>
 
                         <img src="https://framerusercontent.com/images/G5E3Hg44KVQi3oAJd4bMzA4lC4k.svg"
-                            className="absolute inset-0 w-[300px] h-105 z-1"></img>
+                            className="absolute top-0 right-0 left-0 w-[300px] h-full z-1"></img>
 
                         <img src="https://framerusercontent.com/images/wd8bRGMtBOSwdqQ3jrEi9zbd58.png"
-                            className="absolute inset-0 w-auto h-[500px] mt-2 rounded-4xl z-3 mx-auto"
+                            className="absolute -top-2 right-0 left-0 w-auto h-full mt-2 scale-85 rounded-4xl z-3 mx-auto"
                         ></img>
                     </div>
                 </div>
