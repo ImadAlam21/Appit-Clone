@@ -40,7 +40,7 @@ export default function OurBenefits() {
                         <p className="text-2xl md:text-5xl lg:text-6xl">Discover Appit’s Benefits</p>
                     </div>
                     <div className="text-sm text-center lg:text-xl text-gray-400">
-                        <p className="px-0 lg:px-[240px]" >Unlock a world of meaningful connections, tailored experiences, and seamless social interaction.</p>
+                        <p className="px-0 md:px-30 lg:px-60" >Unlock a world of meaningful connections, tailored experiences, and seamless social interaction.</p>
                     </div>
                 </div>
             </div>
