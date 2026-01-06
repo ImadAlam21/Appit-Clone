@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,600;1,600&display=swap');
+@import "tailwindcss";
+
+body{
+    background: black;
+}
+
+#scroller[data-animated = "true"]{
+    overflow: hidden;
+    -webkiit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    max-width: 1440px;
+}
+
+#scroller[data-animated = "true"] #inner-scroller{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--animation-speed, 360s)
+    var(--animation-direction, forwards)
+    linear infinite;
+}
+
+#scroller[nimation-direction="right"]{
+    --animation-direction: reverse;
+}
+#scroller[nimation-direction="left"]{
+    --animation-direction: forwards;
+}
+ 
+@keyframes scroll{
+    to{
+        transform : translate(-50%);
+    }
+}

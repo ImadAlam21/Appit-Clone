@@ -1,0 +1,38 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    /* Adjust the size of the logo as needed */
+    width: 70%;
+    height: 50%;
+}
+
+.header-mid {
+    display: flex;
+    gap: 2rem; /* Space between nav links */
+}
+
+.header-subcontainer {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header-subcontainer:hover {
+    color: white;
+}
+
+.header-button .join-button {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.header-button .join-button:hover {
+    opacity: 0.9;
+}
