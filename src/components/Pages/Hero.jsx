@@ -97,7 +97,7 @@ export default function HeroSection() {
                             ease: "easeOut",
                             delay: 0.6,
                         }}
-                        href="/"
+                        href="/waitlist"
                         className="px-6 py-3 bg-white text-black font-semibold rounded-xl shadow-lg hover:opacity-80 transition"
                     >
                         Join Waitlist

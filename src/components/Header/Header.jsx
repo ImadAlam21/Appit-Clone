@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "/src/App.css";
+import { Link } from "react-router-dom";
 
 export default function Head() {
     const [open, setOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function Head() {
         { label: "Testimonials", id: "testimonials" },
         { label: "FAQ's", id: "faqs" },
     ];
+
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/10 border-b border-white/10">
@@ -106,9 +108,11 @@ export default function Head() {
                                 </button>
                             ))}
 
-                            <button className="mt-3 bg-white text-black py-3 rounded-xl font-semibold hover:opacity-90 transition">
+                            <Link
+                            to="/Waitlist"
+                            className="mt-3 bg-white text-black text-center py-3 rounded-xl font-semibold hover:opacity-90 transition">
                                 Join Waitlist
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 )}

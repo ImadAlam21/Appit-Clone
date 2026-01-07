@@ -4,15 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Head from './components/Header/Header'
 import MainPage from './components/Pages/MainPage'
+import { Routes, Route } from 'react-router-dom'
+import WaitList from './components/Pages/Waitlist'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Head />
-      <MainPage />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/waitlist" element={<WaitList />} />
+      </Routes>
     </>
   )
 }
