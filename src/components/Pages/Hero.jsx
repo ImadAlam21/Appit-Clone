@@ -137,9 +137,8 @@ export default function HeroSection() {
                     <img src="mobile.PNG" className="absolute w-100 aspect-9/16"></img>
                 </div>
             </div> */}
-            <div className="relative w-full max-w-6xl flex justify-center items-center">
+            <div className="relative px-10 w-full max-w-6xl flex justify-center items-center ">
                 {/* Left phone */}
-
                 <motion.div
                         initial={{ opacity: 0, y: 30, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -148,7 +147,7 @@ export default function HeroSection() {
                             ease: "easeOut",
                             delay: 0.7,
                         }}
-                    className="w-64 max-w-xs absolute -left-18 -top-12 transform -translate-y-1/2 hidden md:block">
+                    className="w-64 max-w-xs absolute left-2 md:-left-10 lg:-left-18 -top-12 pl-4 transform -translate-y-1/2 hidden md:block">
                     <img
                         src="https://framerusercontent.com/images/DNA4hTd6dhMchnMyWmFAPzRAB7M.png"
                         alt="Left Phone"
@@ -195,7 +194,7 @@ export default function HeroSection() {
                             ease: "easeOut",
                             delay: 0.7,
                         }}
-                    className="w-64 max-w-xs absolute -right-18 -top-12 transform -translate-y-1/2 hidden md:block">
+                    className="w-64 max-w-xs absolute right-2 md:-right-10 lg:-right-18 pr-4 -top-12 transform -translate-y-1/2 hidden md:block">
                     <img
                         src="https://framerusercontent.com/images/bbJeLns4NqVr3NOyuD4LsO6Qz6E.png"
                         alt="Right Phone"
