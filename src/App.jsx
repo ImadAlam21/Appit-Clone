@@ -5,7 +5,7 @@ import './App.css'
 import Head from './components/Header/Header'
 import MainPage from './components/Pages/MainPage'
 import { Routes, Route } from 'react-router-dom'
-import WaitList from './components/Pages/Waitlist'
+import WaitList from './components/Waitlist/Waitlist'
 
 
 function App() {

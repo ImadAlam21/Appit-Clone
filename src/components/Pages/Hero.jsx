@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import './MainPage'
 import { motion } from "motion/react"
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
+    const MotionLink = motion(Link);
     useEffect(() => {
         const scrollers = document.querySelectorAll("#scroller");
 
@@ -27,7 +29,7 @@ export default function HeroSection() {
     })
 
     return (
-        <section className="flex flex-col items-center bg-black gap-24 px-4 md:px-8 lg:px-16">
+        <section id="hero" className="flex flex-col items-center bg-black gap-24 px-4 md:px-8 lg:px-16">
             <div className="flex flex-col py-20 gap-2 box-border">
                 <div className="flex justify-center">
                     <motion.div
@@ -89,19 +91,19 @@ export default function HeroSection() {
 
                 <div className="flex flex-col gap-6 items-center">
 
-                    <motion.a
-                        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        transition={{
-                            duration: 0.5,
-                            ease: "easeOut",
-                            delay: 0.6,
-                        }}
-                        href="/waitlist"
-                        className="px-6 py-3 bg-white text-black font-semibold rounded-xl shadow-lg hover:opacity-80 transition"
-                    >
-                        Join Waitlist
-                    </motion.a>
+                    <MotionLink
+    to="/Waitlist"
+    initial={{ opacity: 0, y: 30, scale: 0.95 }}
+    animate={{ opacity: 1, y: 0, scale: 1 }}
+    transition={{
+        duration: 0.5,
+        ease: "easeOut",
+        delay: 0.6,
+    }}
+    className="px-6 py-3 bg-white text-black font-semibold rounded-xl shadow-lg hover:opacity-80 transition"
+>
+    Join Waitlist
+</MotionLink>
 
                     <motion.div
                         initial={{ opacity: 0, y: 30, scale: 0.95 }}

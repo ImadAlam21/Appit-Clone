@@ -9,10 +9,28 @@ import HeroSection from './Hero'
 import './MainPage.css'
 import OurPricing from './Pricing'
 import TheTestimonials from './Testimonials'
+import { useState } from 'react'
+
+import { useEffect } from "react";
 
 export default function MainPage() {
-    return (
-        <div id="hero"  className="h-full overflow-hidden mt-20 mx-auto" name="main-container">
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const section = document.getElementById(id);
+
+      if (section) {
+        // Small delay ensures DOM is painted
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, []);
+
+  return (
+    <div id="hero"  className="h-full overflow-hidden mt-20 mx-auto" name="main-container">
             <div className="flex flex-col items-center gap-[100px] md:gap-[200px]" id="top-body">
             <HeroSection />
             <EmpoweringSection />
@@ -25,5 +43,24 @@ export default function MainPage() {
             <Footer />
             </div>
         </div>
-    )
+  );
 }
+
+
+// export default function MainPage() {
+//     return (
+//         <div id="hero"  className="h-full overflow-hidden mt-20 mx-auto" name="main-container">
+//             <div className="flex flex-col items-center gap-[100px] md:gap-[200px]" id="top-body">
+//             <HeroSection />
+//             <EmpoweringSection />
+//             <OurBenefits />
+//             <OurFeatures />
+//             <OurPricing />
+//             <TheTestimonials />
+//             <FaqSection />
+//             <Cta />
+//             <Footer />
+//             </div>
+//         </div>
+//     )
+// }
