@@ -22,7 +22,7 @@ export default function TheTestimonials() {
             });
         }
 
-    })
+    }, []);
 
 
     return (
@@ -35,14 +35,15 @@ export default function TheTestimonials() {
                     </img>
                     <h3>Testimonials</h3>
                 </div>
-                <div className="div flex flex-col items-center gap-7">
+                <div className="div flex flex-col items-center gap-5">
                     <h1 className="text-center text-[30px] md:text-[50px] lg:text-[60px] font-bold">Our Testimonials</h1>
                     <h3 className="text-center px-5 md:px-50 lg:px-90 text-gray-400">See how Appit has transformed users social experiences through their own words.</h3>
                 </div>
             </div>
             <div
                 id="scroller"
-                className="w-full h-auto overflow-hidden mx-auto"
+                style={{ "--animation-speed": "100s",}}
+                className="w-full h-auto -mt-10 overflow-hidden mx-auto"
             >
                 <ul
                     id="inner-scroller"

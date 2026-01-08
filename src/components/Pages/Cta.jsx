@@ -1,6 +1,6 @@
 export default function Cta() {
     return (
-        <div className="div flex flex-col w-full gap-10 text-white items-center justify-center">
+        <div className="div flex flex-col w-full gap-20 text-white items-center justify-center">
             <div className="div flex flex-col w-[55%] gap-8 items-center">
                 <div className="div">
                     <p className="text-center text-6xl font-extrabold">

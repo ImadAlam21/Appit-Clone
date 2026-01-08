@@ -7,7 +7,7 @@ body{
 
 #scroller[data-animated = "true"]{
     overflow: hidden;
-    -webkiit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     max-width: 1440px;
 }
@@ -15,20 +15,27 @@ body{
 #scroller[data-animated = "true"] #inner-scroller{
     width: max-content;
     flex-wrap: nowrap;
-    animation: scroll var(--animation-speed, 360s)
+
+    animation: scroll var(--animation-speed, 20s)
     var(--animation-direction, forwards)
-    linear infinite;
+    linear
+    infinite;
 }
 
-#scroller[nimation-direction="right"]{
+/* #scroller[data-animated="true"]:hover #inner-scroller {
+  animation-play-state: var(--animation-hover-state, paused);
+
+#scroller[animation-direction="right"]{
     --animation-direction: reverse;
 }
-#scroller[nimation-direction="left"]{
+} */
+ 
+#scroller[animation-direction="left"]{
     --animation-direction: forwards;
 }
  
 @keyframes scroll{
     to{
-        transform : translate(-300%);
+        transform : translate(-50%);
     }
 }

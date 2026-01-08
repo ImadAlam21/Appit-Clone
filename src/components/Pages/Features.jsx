@@ -1,6 +1,6 @@
 export default function OurFeatures() {
     return (
-        <div id="features" className="section max-w-[1440px] flex flex-col gap-10 mt-20 scroll-mt-35 items-center justify-center text-white">
+        <div id="features" className="section max-w-[1440px] flex flex-col gap-20 scroll-mt-35 items-center justify-center text-white">
             <div className="div flex flex-col gap-10 items-center">
                 <div className="bg-[rgb(24,24,26)]
                 flex flex-row

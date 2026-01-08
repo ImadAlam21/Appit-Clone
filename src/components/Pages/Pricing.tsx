@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function OurPricing() {
     const [billing, setBilling] = useState("monthly");
     return (
-        <div id="pricing" className="section flex flex-col scroll-mt-35 gap-10 items-center text-white w-full">
+        <div id="pricing" className="section flex flex-col scroll-mt-35 gap-20 items-center text-white w-full">
             <div className="div flex flex-col items-center gap-8 w-full">
                 <div className="flex flex-row bg-[rgb(24,24,26)]
                 rounded-full
@@ -29,7 +29,7 @@ export default function OurPricing() {
                 <div className="mx-2 h-6 w-px bg-gray-500"></div>
                 <div className="flex-1 px-6 py-2 border-[0.1px] bg-white/10 border-gray-400 rounded-2xl">Yearly</div>
             </div> */}
-            <div className="relative inline-flex items-center rounded-full bg-black/40 border border-white/10 p-1 w-fit">
+            <div className="relative inline-flex -mb-15 items-center rounded-full bg-black/40 border border-white/10 p-1 w-fit">
 
                 <div
                     className={`absolute top-1 bottom-1 w-1/2 rounded-full bg-white/10  transition-all duration-300 ring-1 ring-white/15 ease-in-out ${billing === "monthly" ? "left-1" : "left-[48%]"
@@ -53,7 +53,7 @@ export default function OurPricing() {
                     Yearly
                 </button>
             </div>
-            <div className="flex flex-col items-center lg:flex-row gap-20 w-full justify-center py-10 m-auto">
+            <div className="flex flex-col items-center lg:flex-row gap-20 w-full justify-center m-auto">
                 <div
                     id="card1"
                     className="relative flex flex-col border-inherit rounded-3xl py-7 px-3 flex-none w-fit"

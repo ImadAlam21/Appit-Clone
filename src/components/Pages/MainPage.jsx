@@ -31,7 +31,7 @@ export default function MainPage() {
 
   return (
     <div id="hero"  className="h-full overflow-hidden mt-20 mx-auto" name="main-container">
-            <div className="flex flex-col items-center gap-[100px] md:gap-[200px]" id="top-body">
+            <div className="flex flex-col items-center gap-25 md:gap-30" id="top-body">
             <HeroSection />
             <EmpoweringSection />
             <OurBenefits />

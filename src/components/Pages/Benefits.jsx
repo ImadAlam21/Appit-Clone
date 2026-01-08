@@ -7,12 +7,12 @@ export default function OurBenefits() {
         scroll-mt-35
         items-center justify-center
         w-full max-w-[1040px]
-        gap-40
+        gap-20
         ">
             <div className="flex flex-col
             text-white
             items-center justify-center
-            gap-8
+            gap-10
             md:gap-12
             ">
                 <div className="flex flex-row
@@ -374,13 +374,13 @@ export default function OurBenefits() {
                 <div className="relative h-full w-[300px] overflow-hidden">
                     <div>
                         <img src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png?scale-down-to=1024"
-                            className="mx-auto relative w-auto scale-90 h-full z-2"></img>
+                            className="mx-auto relative w-auto scale-80 h-full z-2"></img>
 
                         <img src="https://framerusercontent.com/images/G5E3Hg44KVQi3oAJd4bMzA4lC4k.svg"
-                            className="absolute top-0 right-0 left-0 w-[300px] h-full z-1"></img>
+                            className="absolute top-0 right-0 left-0 scale-90 w-[300px] h-full z-1"></img>
 
                         <img src="https://framerusercontent.com/images/wd8bRGMtBOSwdqQ3jrEi9zbd58.png"
-                            className="absolute -top-2 right-0 left-0 w-auto h-full mt-2 scale-85 rounded-4xl z-3 mx-auto"
+                            className="absolute -top-2 right-0 left-0 w-auto h-full mt-2 scale-75 rounded-4xl z-3 mx-auto"
                         ></img>
                     </div>
                 </div>

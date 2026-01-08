@@ -57,7 +57,6 @@ export default function FaqSection() {
     return (
         <section id="faqs" className="flex flex-col scroll-mt-35 gap-10 w-[80%] items-center text-white mx-auto">
             
-            {/* Header */}
             <div className="flex flex-col gap-5 items-center">
                 <div className="flex gap-1 w-fit py-2 px-3 items-center bg-white/5 rounded-3xl ring-1 ring-white/20">
                     <img
@@ -74,7 +73,7 @@ export default function FaqSection() {
             </div>
 
             {/* FAQ list */}
-            <div className="flex flex-col gap-8 w-full max-w-3xl mx-40">
+            <div className="flex flex-col gap-2 w-full max-w-3xl mx-40">
 
                 {faqs.map((item, index) => (
                     <article

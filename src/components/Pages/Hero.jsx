@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import './MainPage'
+import './MainPage.css'
 import { motion } from "motion/react"
 import { Link } from "react-router-dom";
 
@@ -26,10 +26,10 @@ export default function HeroSection() {
             });
         }
 
-    })
+    }, []); //[] is the empty dependency array {explaination : Run this effect exactly ONCE — when the component first mounts Lifecycle-wise (very important) Think of a React component’s life like this: Component mounts (appears on screen) Component updates (state/props change) Component unmounts (removed from screen). Empty dependency array = ✔ Run on mount only ❌ Do NOT run on re-render ❌ Do NOT run on state change}.
 
     return (
-        <section id="hero" className="flex flex-col items-center bg-black gap-24 px-4 md:px-8 lg:px-16">
+        <section id="hero" className="flex flex-col items-center bg-black gap-20 px-4 md:px-8 lg:px-16">
             <div className="flex flex-col py-20 gap-2 box-border">
                 <div className="flex justify-center">
                     <motion.div
@@ -92,18 +92,18 @@ export default function HeroSection() {
                 <div className="flex flex-col gap-6 items-center">
 
                     <MotionLink
-    to="/Waitlist"
-    initial={{ opacity: 0, y: 30, scale: 0.95 }}
-    animate={{ opacity: 1, y: 0, scale: 1 }}
-    transition={{
-        duration: 0.5,
-        ease: "easeOut",
-        delay: 0.6,
-    }}
-    className="px-6 py-3 bg-white text-black font-semibold rounded-xl shadow-lg hover:opacity-80 transition"
->
-    Join Waitlist
-</MotionLink>
+                        to="/Waitlist"
+                        initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{
+                            duration: 0.5,
+                            ease: "easeOut",
+                            delay: 0.6,
+                        }}
+                        className="px-6 py-3 bg-white text-black font-semibold rounded-xl shadow-lg hover:opacity-80 transition"
+                    >
+                        Join Waitlist
+                    </MotionLink>
 
                     <motion.div
                         initial={{ opacity: 0, y: 30, scale: 0.95 }}
@@ -139,16 +139,16 @@ export default function HeroSection() {
                     <img src="mobile.PNG" className="absolute w-100 aspect-9/16"></img>
                 </div>
             </div> */}
-            <div className="relative px-10 w-full max-w-6xl flex justify-center items-center ">
+            <div className="relative px-10 -mb-20 w-full max-w-6xl flex justify-center items-center">
                 {/* Left phone */}
                 <motion.div
-                        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        transition={{
-                            duration: 0.5,
-                            ease: "easeOut",
-                            delay: 0.7,
-                        }}
+                    initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeOut",
+                        delay: 0.7,
+                    }}
                     className="w-64 max-w-xs absolute left-2 md:-left-10 lg:-left-18 -top-12 pl-4 transform -translate-y-1/2 hidden md:block">
                     <img
                         src="https://framerusercontent.com/images/DNA4hTd6dhMchnMyWmFAPzRAB7M.png"
@@ -166,13 +166,13 @@ export default function HeroSection() {
 
                 {/* Center phone */}
                 <motion.div
-                        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        transition={{
-                            duration: 0.5,
-                            ease: "easeOut",
-                            delay: 0.8,
-                        }}
+                    initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeOut",
+                        delay: 0.8,
+                    }}
                     className="relative w-64 max-w-xs -top-30 mx-4 z-10">
                     <img
                         src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
@@ -189,13 +189,13 @@ export default function HeroSection() {
 
                 {/* Right phone */}
                 <motion.div
-                        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        transition={{
-                            duration: 0.5,
-                            ease: "easeOut",
-                            delay: 0.7,
-                        }}
+                    initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeOut",
+                        delay: 0.7,
+                    }}
                     className="w-64 max-w-xs absolute right-2 md:-right-10 lg:-right-18 pr-4 -top-12 transform -translate-y-1/2 hidden md:block">
                     <img
                         src="https://framerusercontent.com/images/bbJeLns4NqVr3NOyuD4LsO6Qz6E.png"
@@ -220,13 +220,12 @@ export default function HeroSection() {
 
                 <div
                     id="scroller"
-                    className="max-w-full w-xs md:w-xl lg:w-4xl overflow-hidden mx-auto"
+                    className="max-w-full w-xs md:w-xl lg:w-2xl overflow-hidden mx-auto"
                 >
                     <ul
                         id="inner-scroller"
                         className="flex items-center gap-[-1] p-1"
                     >
-                        {/* Each li is non-flexible (won't shrink or grow) and centers the img */}
                         <li className="shrink-0 flex items-center justify-center w-[120px] h-[56px]">
                             <img
                                 src="https://framerusercontent.com/images/REcm2GPd8XeDeIQSsBPuO6ow8o.svg"

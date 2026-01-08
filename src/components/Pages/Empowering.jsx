@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 export default function EmpoweringSection() {
     return (
-        <div className="flex flex-col place-items-center text-white gap-[2rem]">
+        <div className="flex flex-col place-items-center text-white gap-20">
             <div className="flex flex-col items-center mb-1">
                 <div className="relative flex items-center justify-center w-[84px] h-[84px] sm:w-[84px] md:w-[108px] lg:w-[108px] sm:h-[84px] md:h-[108px] lg:h-[108px]">
                     <img id="image-bg"
