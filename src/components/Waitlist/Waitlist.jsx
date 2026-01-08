@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import Footer from "../Pages/Footer";
+import FaqSection from "../Pages/Faqs";
 
 export default function WaitList() {
     return (
-        <>
+        <div className="flex flex-col  items-center">
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -71,7 +73,7 @@ export default function WaitList() {
                             </div>
                         </div>
                     </div>
-                    <div className="div px-10">
+                    <div className="div p-20 lg:p-0 max-w-200">
                         <video
                             className="rounded-xl aspect-video w-full"
 
@@ -84,6 +86,9 @@ export default function WaitList() {
                 </div>
                 <div className="div"></div>
             </motion.div>
-        </>
+            <FaqSection />
+            <div className="h-20 md:h-32 lg:h-100" />
+            <Footer/>
+        </div>
     )
 }

@@ -120,9 +120,9 @@ export default function HeroSection() {
                         />
                         <p className="text-gray-400 text-xs md:text-sm -ml-2">App Available For</p>
                         <div className="flex flex-row items-center gap-[0.3rem] bg-[rgb(24,24,26)] px-[0.6rem] py-[0.4rem] rounded-full border-[0.01rem] border-[#969696]">
-                            <img src="https://framerusercontent.com/images/iubuv2STfmPz5zeKS49tuf1E38.svg"></img>
+                            <img className="cursor-pointer" src="https://framerusercontent.com/images/iubuv2STfmPz5zeKS49tuf1E38.svg"></img>
                             <div className="w-px h-[1.2rem] bg-[#969696] mx-2" />
-                            <img src="https://framerusercontent.com/images/Qh3hInJRKF6WFt1cZiFo08d8aXM.svg"></img>
+                            <img className="cursor-pointer" src="https://framerusercontent.com/images/Qh3hInJRKF6WFt1cZiFo08d8aXM.svg"></img>
                         </div>
                     </motion.div>
                 </div>

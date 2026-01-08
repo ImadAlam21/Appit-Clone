@@ -69,17 +69,25 @@ export default function Head() {
         <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/10 border-b border-white/10">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
                 <div onClick={handleLogoClick}
-                    className="header-logo cursor-pointer">
-                    <img src="/logo/logo.png" alt="Appit Logo" className="w-10 h-10" />
+                    className="cursor-pointer">
+                    <img
+                        className="w-15 md:w-20 lg:w-30 aspect-auto"
+                        src="/logo/logo.png" alt="Appit Logo" />
                 </div>
 
                 {/* Desktop menu */}
-                <div className="hidden xl:flex items-center gap-8 text-gray-300 font-medium">
+                <div className="hidden xl:flex items-center gap-8 text-white/60 font-medium">
                     {menuItems.map((item) => (
                         <button
                             key={item.id}
                             onClick={() => handleNavClick(item.id)}
-                            className="hover:text-white transition"
+                            className="px-3 py-3
+                            rounded-xl
+                            text-white/60
+                            transition-all duration-200 ease-out
+                            hover:bg-white/10
+                            hover:text-white
+                            cursor-pointer"
                         >
                             {item.label}
                         </button>
@@ -102,14 +110,14 @@ export default function Head() {
                         e.stopPropagation();
                         setOpen(prev => !prev);
                     }}
-                    className="xl:hidden bg-white text-black p-3 rounded-xl"
+                    className="xl:hidden bg-white text-black p-1 md:p-2 rounded-md md:rounded-xl cursor-pointer"
                 >
                     {open ? (
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     )}
@@ -123,7 +131,7 @@ export default function Head() {
                                 <button
                                     key={item.id}
                                     onClick={() => handleNavClick(item.id)}
-                                    className="text-left hover:opacity-70 transition py-2"
+                                    className="text-left hover:opacity-70 transition py-2 cursor-pointer"
                                 >
                                     {item.label}
                                 </button>
@@ -132,7 +140,7 @@ export default function Head() {
                             <Link
                                 to="/Waitlist"
                                 onClick={() => setOpen(false)}
-                                className="mt-3 bg-white text-black text-center py-3 rounded-xl font-semibold hover:opacity-90 transition"
+                                className="mt-3 bg-white text-black text-center py-3 rounded-xl font-semibold hover:opacity-80 transition"
                             >
                                 Join Waitlist
                             </Link>

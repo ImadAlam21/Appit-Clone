@@ -526,7 +526,7 @@ export default function OurBenefits() {
                         </div>
                     </div>
                     <div className="div flex flex-col md:flex-row min-w-[300px] gap-5 items-center justify-center md:justify-start p-3">
-                        <div className="shrink-0 div flex bg-white rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
+                        <div className="shrink-0 div flex bg-white cursor-pointer rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
                             <img src="https://framerusercontent.com/images/1GgSZDsVA7GKub98IQFhnqoNJvI.svg"
                                 className="w-auto h-auto object-cover p-1"
                             ></img>
@@ -535,7 +535,7 @@ export default function OurBenefits() {
                                 <h2 className="font-bold text-xl">Google Play</h2>
                             </div>
                         </div>
-                        <div className="shrink-0 div flex bg-white rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
+                        <div className="shrink-0 div flex bg-white cursor-pointer rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
                             <img src="https://framerusercontent.com/images/FYCYoM8VIfSiqoaZSgdFlktYPik.svg"
                                 className="w-auto h-auto object-cover p-1"
                             ></img>

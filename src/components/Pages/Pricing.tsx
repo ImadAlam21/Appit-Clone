@@ -40,7 +40,7 @@ export default function OurPricing() {
                 {/* Monthly */}
                 <button
                     onClick={() => setBilling("monthly")}
-                    className="relative w-1/2 z-10 flex-1 px-5 py-2 text-sm font-medium"
+                    className="relative w-1/2 z-10 cursor-pointer flex-1 px-5 py-2 text-sm font-medium"
                 >
                     Monthly
                 </button>
@@ -48,7 +48,7 @@ export default function OurPricing() {
                 {/* Yearly */}
                 <button
                     onClick={() => setBilling("yearly")}
-                    className="relative w-1/2 z-10 flex-1 px-5 py-2 text-sm font-medium"
+                    className="relative w-1/2 z-10 cursor-pointer flex-1 px-5 py-2 text-sm font-medium"
                 >
                     Yearly
                 </button>
