@@ -41,7 +41,7 @@ export default function EmpoweringSection() {
                 px-4 md:px-3 lg:px-6
                 ">
                     <div className="text-5xl lg:text-6xl font-bold">
-                        <CountUp start={450} end={500} useEasing={false} duration={1} suffix="k" enableScrollSpy={true} />
+                        <CountUp start={450} end={500} useEasing={false} duration={0.6} suffix="k" enableScrollSpy={true} />
                         <span className="text-4xl md:text-5xl">+</span>
                     </div>
                     <div className="text-sm lg:text-xl text-gray-400">
@@ -71,7 +71,7 @@ export default function EmpoweringSection() {
                 px-4 md:px-3 lg:px-6
                 ">
                     <div className="text-5xl  lg:text-6xl font-bold">
-                        <CountUp start={150} end={200} useEasing={false} duration={1} suffix="k" enableScrollSpy={true} />
+                        <CountUp start={150} end={200} useEasing={false} duration={0.6} suffix="k" enableScrollSpy={true} />
                         <span className="text-4xl md:text-5xl">+</span>
                     </div>
                     <div className="text-sm lg:text-xl text-gray-400">
@@ -101,7 +101,7 @@ export default function EmpoweringSection() {
                 px-4 md:px-3 lg:px-6
                 ">
                     <div className="text-5xl  lg:text-6xl font-bold">
-                        <CountUp start={1} end={50} useEasing={false} duration={1} enableScrollSpy={true} />
+                        <CountUp start={1} end={50} useEasing={false} duration={0.6} enableScrollSpy={true} />
                         <span className="text-4xl md:text-5xl">+</span>
                     </div>
                     <div className="text-sm lg:text-xl text-gray-400">
