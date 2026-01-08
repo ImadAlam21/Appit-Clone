@@ -371,19 +371,19 @@ export default function OurBenefits() {
                         </div>
                     </div>
                 </div>
-                <div className="relative h-full w-[300px] overflow-hidden">
-                    <div>
-                        <img src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png?scale-down-to=1024"
-                            className="mx-auto relative w-auto scale-80 h-full z-2"></img>
 
+                <div className="relative w-full max-w-[300px] overflow-hidden bg-[#141416] px-4 rounded-2xl border-[0.1px] border-gray-600">
+                    <div className="-my-16">
                         <img src="https://framerusercontent.com/images/G5E3Hg44KVQi3oAJd4bMzA4lC4k.svg"
                             className="absolute top-0 right-0 left-0 scale-90 w-[300px] h-full z-1"></img>
-
-                        <img src="https://framerusercontent.com/images/wd8bRGMtBOSwdqQ3jrEi9zbd58.png"
-                            className="absolute -top-2 right-0 left-0 w-auto h-full mt-2 scale-75 rounded-4xl z-3 mx-auto"
-                        ></img>
+                        <img src="https://framerusercontent.com/images/I9yRU9jEN2S2ol2M7kgT5c6zOrc.png"
+                            className="mx-auto relative -bottom-10 w-full h-full pt-10 z-2">
+                        </img>
+                        <img src="https://framerusercontent.com/images/wY3nZb0IHOFXnNZW6Mm2BjRursc.png"
+                            className="absolute bottom-0 right-0 left-0 px-9 aspect-auto w-full h-full pt-8 z-3"></img>
                     </div>
                 </div>
+
                 <div className="div flex flex-col px-4 gap-5">
                     <div className="bg-[#141415] rounded-2xl border-[0.1px] border-gray-600 max-w-[300px] h-full p-6">
                         <div className="flex flex-col gap-5">
@@ -526,7 +526,7 @@ export default function OurBenefits() {
                         </div>
                     </div>
                     <div className="div flex flex-col md:flex-row min-w-[300px] gap-5 items-center justify-center md:justify-start p-3">
-                        <div className="shrink-0 div flex bg-white cursor-pointer rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
+                        <div className="shrink-0 div flex bg-white rounded-2xl border-[0.1px] border-gray-600 p-5 gap-5 py-3">
                             <img src="https://framerusercontent.com/images/1GgSZDsVA7GKub98IQFhnqoNJvI.svg"
                                 className="w-auto h-auto object-cover p-1"
                             ></img>
