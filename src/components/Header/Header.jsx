@@ -32,13 +32,13 @@ export default function Head() {
     };
 
     const handleNavClick = (sectionId) => {
-  if (window.location.pathname !== "/") {
-    // Hard reload + remove waitlist from history
-    window.location.replace(`/#${sectionId}`);
-  } else {
-    scrollToSection(sectionId);
-  }
-};
+        if (window.location.pathname !== "/") {
+            // Hard reload + remove waitlist from history
+            window.location.replace(`/#${sectionId}`);
+        } else {
+            scrollToSection(sectionId);
+        }
+    };
 
     //Closes menu on outside click
     useEffect(() => {
@@ -98,7 +98,10 @@ export default function Head() {
 
                 {/* Hamburger button */}
                 <button
-                    onClick={() => setOpen(!open)}
+                    onMouseDown={(e) => {
+                        e.stopPropagation();
+                        setOpen(prev => !prev);
+                    }}
                     className="xl:hidden bg-white text-black p-3 rounded-xl"
                 >
                     {open ? (
@@ -128,7 +131,7 @@ export default function Head() {
                             {/* Mobile Waitlist - Closes menu on click */}
                             <Link
                                 to="/Waitlist"
-                                onClick={() => setOpen(false)}  // ADD THIS
+                                onClick={() => setOpen(false)}
                                 className="mt-3 bg-white text-black text-center py-3 rounded-xl font-semibold hover:opacity-90 transition"
                             >
                                 Join Waitlist
